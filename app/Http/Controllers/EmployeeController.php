@@ -124,7 +124,6 @@ class EmployeeController extends Controller
             throw new \ModelNotFoundException("Employee not found.");
         else {
             $employee->delete();
-            $user->delete();
             $res = [
                 "status" => "success",
                 "message" => "Delete Employee success",
